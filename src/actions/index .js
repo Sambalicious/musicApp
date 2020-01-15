@@ -1,9 +1,17 @@
-const SELECT_SONG = 'SELECT_SONG';
 
 
-export const  action= () => {
+import { SIGN_IN, SIGN_OUT } from './Types';
+
+export const signIn = (userId) => {
     return {
-        type: SELECT_SONG,
-        
+        type: SIGN_IN,
+        payload: userId
+    }
+}
+
+
+export const signOut = () => {
+    return {
+        type: SIGN_OUT
     }
 }
