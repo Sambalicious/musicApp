@@ -1,6 +1,6 @@
 
 
-import { SIGN_IN, SIGN_OUT } from './Types';
+import { SIGN_IN , SIGN_OUT } from './Types';
 
 export const signIn = (userId) => {
     return {

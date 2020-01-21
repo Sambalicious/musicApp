@@ -7,8 +7,11 @@ import { createStore } from 'redux';
 import App from './components/App';
 import reducers from './reducer';
 
-const store =  createStore(reducers)
+const stores =  createStore(reducers)
 
 
-ReactDOM.render(<Provider store= {store}> <App/> </Provider>, 
+ReactDOM.render(
+    <Provider store={stores}>
+        <App/>
+    </Provider>, 
     document.querySelector('#root'));
