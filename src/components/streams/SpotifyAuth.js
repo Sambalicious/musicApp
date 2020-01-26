@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-
-
 import SpotifyWebApi from 'spotify-web-api-js';
-
-
-
-
-
-
-
 const spotifyApi = new SpotifyWebApi();
 
-class spotifyApi extends Component {
-    constructor(){
+class SpotifyAuth extends Component {
+  constructor(){
     super();
     const params = this.getHashParams();
     const token = params.access_token;
@@ -47,11 +38,24 @@ class spotifyApi extends Component {
         });
       })
   }
-
-  render(){
-      return (
-          <div>
-            <a href='http://localhost:8888' > Login to Spoty </a>
-          </div>
-      )
+  render() {
+    return (
+      <div>
+        <a href='http://localhost:8888' className="ui green  button"> Login to Spotify </a>
+        <div>
+          Now Playing: { this.state.nowPlaying.name }
+        </div>
+        <div>
+          <img src={this.state.nowPlaying.albumArt} alt={'spotify-image'} style={{ height: 150 }}/>
+        </div>
+        { this.state.loggedIn &&
+          <button onClick={() => this.getNowPlaying()}>
+            Check Now Playing
+          </button>
+        }
+      </div>
+    );
   }
+}
+
+export default SpotifyAuth;

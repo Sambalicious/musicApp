@@ -5,13 +5,14 @@ import { BrowserRouter, Route  } from 'react-router-dom';
 
 
 
-import Home from './streams/Home';
+import SpotifyAuth from './streams/SpotifyAuth';
 import Header from './Header';
 import SongUpload from './streams/SongUpload';
 import SongEdit from './streams/SongEdit';
 import SongDelete from './streams/SongDelete';
 import SongShow from './streams/SongShow';
 import SongList from './streams/SongList';
+import Landing from './streams/Landing';
 
 
 
@@ -27,9 +28,10 @@ const App = () => {
             
             <BrowserRouter>
             <div>
+            
             <Header /> 
             
-            <Route path='/' exact component={Home} />
+            <Route path='/' exact component={Landing} />
             <Route path='/streams/list' exact component={SongList} />
             <Route path='/streams/upload' exact component={SongUpload} />
             <Route path='/streams/edit' exact component={SongEdit} />

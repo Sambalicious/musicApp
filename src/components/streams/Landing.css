@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url(./music1.jpg ) no-repeat;
+    background-size: cover;
+    
+}
+
+.box{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family:'Century Gothic', sans-serif;
+}
+
+.box-img{
+    
+    width: 250px;
+    height: 250px;
+}
+
+hr{
+    margin-top: 30px;
+    width: 80%;
+   color: white;
+}
+.or{
+    color:lightskyblue;
+    width: 40px;
+    margin: -19px auto 10px;
+}

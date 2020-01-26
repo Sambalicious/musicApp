@@ -49,6 +49,7 @@ body{
     display: inline-block;
     margin: 6px;
     list-style: none;
+    
 }
 
 .box li a{
@@ -60,6 +61,7 @@ body{
 
 .box li a:hover{
     color:#b9b9b9;
+    text-decoration: none;
 }
 
 nav{

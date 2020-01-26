@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import GoogleAuth from './GoogleAuth';
 
-
+import './streams/Header.css'
 
 
 
@@ -27,7 +27,7 @@ const Header = () => {
             </ul>
         </nav>
     </header>        
-        <GoogleAuth />
+    
         
     </div>
     )
