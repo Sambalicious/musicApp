@@ -1,0 +1,83 @@
+/*
+
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
+
+
+import './streams/Header.css'
+
+
+
+const Header = () => {
+    return (
+    <div>
+
+            <header>
+        <nav>
+            <div class="logo">
+                
+                 <Link to="/" >
+                     <h1>MusicApp</h1>
+                </Link>
+            </div>
+            <ul>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/streams/list"> Songs</NavLink></li>
+                <li><NavLink to="/streams/upload">upload</NavLink></li>
+                <li><NavLink to="/streams/register">Register</NavLink></li>
+                <li><NavLink to="/streams/delete">delete</NavLink></li>
+                <li><NavLink to="/streams/login">Login</NavLink></li>
+
+            </ul>
+        </nav>
+    </header>        
+    
+        
+    </div>
+
+    */
+
+
+
+
+import React from 'react'
+
+import { Link , NavLink } from 'react-router-dom';
+
+
+
+
+const Navbar = () => {
+    return ( 
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Link className="navbar-brand" to="/">MusicApp</Link>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/">Songs<span className="sr-only">(current)</span></NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/streams/playlists">Rentals</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/customers">Customers</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/streams/login">Login</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/streams/register">Register</NavLink>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+     );
+}
+ 
+
+
+export default Navbar;

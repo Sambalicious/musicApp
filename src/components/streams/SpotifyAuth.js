@@ -46,7 +46,7 @@ class SpotifyAuth extends Component {
           Now Playing: { this.state.nowPlaying.name }
         </div>
         <div>
-          <img src={this.state.nowPlaying.albumArt} alt={'spotify-image'} style={{ height: 150 }}/>
+          <img src={this.state.nowPlaying.albumArt} alt={'spotify'} style={{ height: 150 }}/>
         </div>
         { this.state.loggedIn &&
           <button onClick={() => this.getNowPlaying()}>

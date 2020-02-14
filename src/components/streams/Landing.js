@@ -8,8 +8,9 @@ class Landing extends Component {
     
     render() { 
         return ( 
+            <div className="container">
             <div className="box">
-                <img src={music2} alt={"my_photo"} class="box-img"/>
+                <img src={music2} alt={"my_photo"} className="box-img"/>
                 <h1>Music nourishes the soul. It gives you energy.</h1>
                 <h5>We have got you covered</h5>
 
@@ -17,10 +18,11 @@ class Landing extends Component {
 
                 <hr/>
                 <p className="or">OR</p>
-                <br/>
+                
 
                 <SpotifyAuth />
 
+            </div>
             </div>
          );
     }
